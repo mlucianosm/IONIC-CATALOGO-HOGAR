@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Iluminacion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item><ion-chip color="dark"><button ion-item (click)="irpage2tab2()"><ion-icon item-left name="podium"></ion-icon>Encuesta</button> </ion-chip></ion-item>
+  <ion-list>
+    <ion-radio-group >
+     
+        <ion-item>
+          <ion-label><ion-icon item-left name="flashlight"></ion-icon>Linternas</ion-label>
+          <ion-radio [(ngModel)]="radio1" value="radio1" (click)="cambiaopcion1()"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-icon item-left name="sunny"></ion-icon>Leds</ion-label>
+          <ion-radio [(ngModel)]="radio2" value="radio2" (click)="cambiaopcion2()"></ion-radio>
+        </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <div *ngIf="radio1check===1; then thenBlock1 else elseBlock1"></div>
+  <ng-template #thenBlock1>
+      <ion-card class="welcome-card">
+        <ion-item><ion-img style="width: 280px; height: 200px;" src="/assets/linter1.jpg"></ion-img></ion-item>
+      </ion-card>
+  </ng-template>
+  <ng-template #elseBlock1></ng-template> 
+  <div *ngIf="radio2check===2; then thenBlock2 else elseBlock2"></div>
+  <ng-template #thenBlock2>
+    <ion-item><ion-img style="width: 280px; height: 200px;" src="/assets/led1.jpg"></ion-img></ion-item>
+  </ng-template>
+  <ng-template #elseBlock2></ng-template>
+  
+  
+
+</ion-content>

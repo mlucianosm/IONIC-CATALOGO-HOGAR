@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Encuesta</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="primary">
+         
+      </ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    
+      <ion-item> Linternas    : <ion-chip><p> {{ sumaopcion1 }}</p></ion-chip></ion-item>
+      <ion-item> Leds        : <ion-chip><p> {{ sumaopcion2 }}</p></ion-chip></ion-item>
+      <ion-item> Lamparas de techo    : <ion-chip><p> {{ sumaopcion3 }}</p></ion-chip></ion-item>
+      <ion-item> Recomendable : <ion-chip><p> {{ sumaopcion4 }}</p></ion-chip></ion-item>
+    
+    <ion-item><ion-button (click) = "presentActionSheet()">Responder Encuesta </ion-button></ion-item>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Servicios
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item><ion-button (click)="irpage3tab3()"><ion-icon name="contacts"></ion-icon></ion-button></ion-item>
+  <ion-list>
+         <ion-item>
+          <ion-label>Gasfiter</ion-label>
+          <ion-checkbox [(ngModel)]="checkbox1"  (ionChange)="cambiaopcion1()"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-label>Electricista</ion-label>
+          <ion-checkbox [(ngModel)]="checkbox2"  (ionChange)="cambiaopcion2()"></ion-checkbox>
+        </ion-item>
+    
+  </ion-list>
+  <div *ngIf="checkbox1check===1; then thenBlock1 else elseBlock1"></div>
+  <ng-template #thenBlock1>
+      <ion-card class="welcome-card">
+          <ion-card-title>Gasfiter</ion-card-title>
+          <ion-item><ion-img style="width: 280px; height: 200px;" src="/assets/gasfiter.png" (click)="irproveedor()"></ion-img></ion-item>
+        </ion-card>
+  </ng-template>
+  <ng-template #elseBlock1></ng-template> 
+  <div *ngIf="checkbox2check===2; then thenBlock2 else elseBlock2"></div>
+  <ng-template #thenBlock2>
+      <ion-card class="welcome-card">
+          <ion-card-title>Electricista</ion-card-title>
+          <ion-item><ion-img style="width: 280px; height: 200px;" src="/assets/electricista.png" (click)="irproveedor()"></ion-img></ion-item>
+        </ion-card>
+  </ng-template>
+  <ng-template #elseBlock2></ng-template>
+  
+</ion-content>
