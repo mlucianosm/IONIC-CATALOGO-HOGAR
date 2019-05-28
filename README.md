@@ -31,4 +31,4 @@ Tab) Servicios : Permite visualizar graficamente los tipos de servicios
   
   PD. Todas las fotografias se muestran usando el componente "ion-card".
 
-
+![CATALOGO HOGAR](https://github.com/mlucianosm/IONIC-CATALOGO-HOGAR/blob/master/src/assets/catalogo.png)
