@@ -1,4 +1,4 @@
-# IONIC-CATALOGO-HOGAR
+# IONIC-CATALOGO-HOGAR :house:
 
 Desarrollo utilizando multiples componentes ionic, para crear 
 una APP Hibrida con el framework IONIC, la cual se inicia mostrando 3 TABS.
